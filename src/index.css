@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./web_assets/body-bg.jpg')
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}

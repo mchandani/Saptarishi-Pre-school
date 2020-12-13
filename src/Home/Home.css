@@ -1,0 +1,111 @@
+.top_container{
+    height: 95vh;
+    position: relative;
+}
+
+.top_container::before{
+    content: '';
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    background-image: url('../web_assets//hero-bg.png');
+    background-size: cover;
+    background-position: right bottom;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.hero-container{
+    padding-top: 50px;
+    padding-bottom: 75px;
+    display: flex;
+}
+.hero-detail-box{
+    color: #fefeff;
+    width: 45%;
+}
+.hero-img-container{
+    width: 55%;
+}
+.d-flex{
+    display: flex !important;
+}
+.justify-cont-center{
+    justify-content: center !important;
+}
+.align-items-center{
+    align-items: center !important;
+}
+.layout_padding{
+    padding:80px 0px;
+}
+.call-btn{
+    padding: 12px 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fec913;
+    border: 1px solid transparent ;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    color: #fff;
+}
+.text-center{
+    text-align: center !important;
+}
+.img_fluid{
+    width: 100%;
+    height: auto;
+}
+
+.about-img-box{
+    width: 65%;
+    margin: 40px auto;
+}
+.main-heading{
+    color: #082465;
+    font-weight: bold;
+    text-align: center;
+}
+.teachers_container{
+    padding-top: 45px ;
+}
+.card_title{
+    color: #48494a;
+    text-align: center;
+}
+.card_body{
+    padding: 1.25rem;
+}
+.card{
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: transparent !important;
+    border: none !important;
+}
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active{
+    text-transform: capitalize;
+    letter-spacing: 0px !important;
+}
+@media screen and (max-width:768px){
+    .top_container::before{
+        width: 100%;
+    }
+    
+    .top_container{
+        height: auto;
+    }
+    .hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-detail-box{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .hero-img-container{
+        width: 100%;
+    }
+    .card_deck{
+        flex-direction: column;
+    }
+    }

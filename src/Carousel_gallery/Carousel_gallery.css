@@ -1,0 +1,47 @@
+.vehicle_image_box{
+    width: 60%;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon{
+    background-color: #082465 !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 100% ;
+    background-size: 10px !important;
+}
+.carousel-control-prev{
+    opacity: 1 !important;
+}
+.carousel-control-next-icon{
+    background-color: #082465 !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 100% ;
+    background-size: 10px !important;
+}
+.carousel-control-next{
+    opacity: 1 !important;
+    
+}
+@media screen and (max-width:768px){
+    .carousel-control-next-icon{
+        height: 35px !important;
+        width: 35px !important;
+    }
+    .carousel-control-prev-icon{
+        height: 35px !important;
+        width: 35px !important;
+    }
+    .carousel-control-next,.carousel-control-prev{
+        top: 120% !important;
+    }
+    .carousel-control-next{
+        right: 30% !important;
+    }
+    .carousel-control-prev{
+        left: 30% !important;
+    }
+    .vehicle_image_box{
+        width: 100%;
+    }
+}

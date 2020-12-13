@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    letter-spacing: 4px;
+    color: #fec913;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0px !important;
+    
+}
+.navbarxl-active
+{
+    background-color: #082465;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+.navbarxl{
+    position: relative;
+    color: black;
+    background: transparent;
+}
+.nav li{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family:  Montserrat,sans-serif;
+    width: 100%;;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 55%
+}
+.nav-links a{
+    letter-spacing: .15rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+.nav-links a.active{
+    color: #9a9999 !important;
+    
+}
+.nav-links li:hover{
+    text-decoration: none !important;
+    color: #9a9999 !important;
+    transition: all 0.3s ease ; 
+}
+.dl,ol,ul{
+    margin: 0px !important;
+}
+.nav-links li{
+    list-style-type: none;
+    
+}
+
+.burger{
+    display: none;
+}
+.burger div{
+    background-color:#fec913 !important;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    transition: all 0.3s ease;
+}
+.toggle .line2{
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+    transition: all 0.8s ease;
+}
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active{
+    text-transform: capitalize;
+    letter-spacing: 0px !important;
+}
+.logo_div{
+    width: 45%;
+}
+.goog-te-gadget{
+    top: 1vh;
+    position: relative;
+}
+@media screen and (max-width:991px){
+    .nav-links{
+        width: 60%;
+    }
+    .logo_div{
+        width: 40% !important;
+    }
+    
+}
+@media screen and (max-width:768px){
+    #root{
+        overflow-x: hidden !important;
+    }
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 8vh;
+        background-color: #082465;
+        color: white;
+        right: 0px;
+        height: 92vh;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(100%); 
+        width: 60%;   
+        animation: navLinkFade 0.5s ease-in-out;
+    }
+    .logo{
+        font-size:15px;
+        letter-spacing: 2px;
+        width: 65%;
+    }
+    .imgxl{
+        height: 100%;
+    }
+    .nav-links li{
+        animation: navLinkFade 0.5s ease-in-out;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-active{
+        transform: translateX(0%);
+       display: flex ;
+       z-index: 50 !important;
+       /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px; */
+    }
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        to{
+            opacity: 1 !important;
+            transform: translateX(0px);
+        }
+    }
+}
